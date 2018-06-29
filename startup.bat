@@ -1,0 +1,1 @@
+java -jar wk_server.jar

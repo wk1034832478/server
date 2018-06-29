@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	根结点为 wangkai
+	然后是properties 结点，该结点必须存在！将所有的属性均放在properties当中
+	结点名称即为属性名称，结点内容是属性的值
+	eg:
+		<port>8080</port>
+
+-->
+<wangkai>
+	<properties>
+		<!-- 程序的端口 -->
+		<port>8080</port>
+		
+		<!-- 服务启动者的姓名 -->
+		<runner>王凯</runner>
+
+		<!-- 
+			连接超时时间,当客户端连接到服务器之后，一般都会保持着长连接，当超时timeout设置的时间之后，仍然没有发出后续的请求，
+			则会自动断开连接，所以这里设置的是两次请求最大的间隔时间！
+		-->
+		<timeout>30</timeout>
+		
+		<!-- 账户密码，账户密码必须同时设置，否则失效 -->
+		<!--
+			<username>wk</username>
+			<password>wk</password>
+		-->
+	</properties>
+</wangkai>
